@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Pelanggan - BILSPORT</title>
     
-    <!-- 1. TAILWIND CSS VIA CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
-    <!-- 2. GOOGLE FONTS -->
+        
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- 3. CONFIG DAN LOGIKA DARK MODE (DITARUH PALING ATAS AGAR LANGSUNG JALAN) -->
+        
     <style type="text/tailwindcss">
         @variant dark (&:where(.dark, .dark *));
 
