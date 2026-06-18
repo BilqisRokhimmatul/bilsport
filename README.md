@@ -1,58 +1,322 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# ⚽ BILSPORT
 
-## About Laravel
+### Platform Penyewaan Lapangan Olahraga Terintegrasi di Jember
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![Laravel](https://img.shields.io/badge/Laravel-12-red?style=for-the-badge\&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8+-blue?style=for-the-badge\&logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge\&logo=mysql)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge\&logo=tailwindcss)
+![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-yellow?style=for-the-badge\&logo=javascript)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Modern Sports Field Booking System**
 
-## Learning Laravel
+BILSPORT merupakan platform reservasi lapangan olahraga berbasis web yang dirancang untuk mempermudah proses pemesanan lapangan secara digital, cepat, dan terintegrasi.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Sistem memungkinkan pelanggan melakukan reservasi secara mandiri, melihat jadwal yang tersedia secara real-time, melakukan pembayaran, serta memantau status penyewaan. Di sisi lain, admin dapat mengelola lapangan, memverifikasi transaksi, serta memantau performa bisnis melalui dashboard analitik interaktif.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+✨ **Smart Booking • Real-Time Availability • Admin Dashboard • Weather Integration**
 
-## Agentic Development
+</div>
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 📚 Dokumentasi Project
 
-```bash
-composer require laravel/boost --dev
+| Dokumen | Link |
+|----------|------|
+| 📄 Laporan Project | [Lihat Laporan](https://drive.google.com/file/d/1zSx33dyt6hULCCjefJEL7Szr7jPVCaku/view?usp=sharing) |
+| 🎥 Video Demo | [Lihat Demo](https://youtu.be/q3xqnvufqCE) |
+| 🌐 Live Demo | [Kunjungi Website](https://bilsport-production.up.railway.app/) |
 
-php artisan boost:install
+---
+
+# 📖 Daftar Isi
+
+* [Tentang Project](#-tentang-project)
+* [Fitur Utama](#-fitur-utama)
+* [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+* [Arsitektur Sistem](#-arsitektur-sistem)
+* [Struktur Database](#-struktur-database)
+* [Daftar Halaman](#-daftar-halaman)
+* [Akun Demo](#-akun-demo)
+* [Instalasi](#-instalasi)
+* [Kontributor](#-kontributor)
+
+---
+
+# 🎯 Tentang Project
+
+Industri penyewaan lapangan olahraga masih banyak menggunakan metode pencatatan manual melalui telepon, pesan instan, atau buku reservasi. Proses tersebut rentan terhadap kesalahan pencatatan, bentrok jadwal, hingga kesulitan dalam pengelolaan transaksi.
+
+BILSPORT hadir sebagai solusi digital yang menyediakan sistem reservasi lapangan olahraga berbasis web dengan fitur validasi jadwal otomatis, pengelolaan transaksi terintegrasi, serta dashboard administrasi yang informatif.
+
+Melalui platform ini, pengguna dapat:
+
+✅ Melihat ketersediaan lapangan secara real-time
+✅ Melakukan reservasi secara online
+✅ Mengunggah bukti pembayaran
+✅ Memantau status transaksi
+✅ Mengakses histori penyewaan
+
+Sementara admin dapat:
+
+✅ Mengelola data lapangan
+✅ Memvalidasi pembayaran pelanggan
+✅ Memantau statistik bisnis
+✅ Mengelola status reservasi
+✅ Melihat informasi cuaca lokal
+
+---
+
+# ✨ Fitur Utama
+
+## 👤 Fitur Pelanggan
+
+### 🔐 Authentication System
+
+* Registrasi akun
+* Login & Logout
+* Session Management
+* Role-based Access
+
+### ⚽ Booking Lapangan
+
+* Katalog lapangan berdasarkan jenis olahraga
+* Informasi harga sewa per jam
+* Pengecekan ketersediaan jadwal
+* Validasi slot otomatis
+* Pencegahan double booking
+
+### 💳 Pembayaran
+
+* Upload bukti transfer
+* Status transaksi real-time
+* Tracking proses verifikasi
+
+### 📋 Riwayat Reservasi
+
+* Histori penyewaan lengkap
+* Monitoring status pesanan
+* Detail transaksi
+
+---
+
+## 🛠️ Fitur Admin
+
+### 📊 Dashboard Analitik
+
+* Total pendapatan
+* Total transaksi
+* Jumlah lapangan aktif
+* Ringkasan statistik bisnis
+
+### 📈 Visualisasi Data
+
+* Grafik pendapatan
+* Tren transaksi
+* Monitoring performa bisnis
+* Integrasi Chart.js
+
+### 🌦️ Informasi Cuaca
+
+* Cuaca terkini wilayah Jember
+* Dukungan operasional lapangan outdoor
+
+### ⚙️ Manajemen Lapangan
+
+* Tambah lapangan
+* Edit informasi lapangan
+* Pengaturan harga sewa
+* Status perawatan lapangan
+
+### ✅ Verifikasi Booking
+
+* Approval transaksi
+* Penolakan transaksi
+* Manajemen status pesanan
+
+---
+
+# 🏗️ Arsitektur Sistem
+
+```text
+Pelanggan
+    │
+    ▼
+Melihat Jadwal Lapangan
+    │
+    ▼
+Pilih Lapangan & Jam Sewa
+    │
+    ▼
+Upload Bukti Pembayaran
+    │
+    ▼
+Status Pending
+    │
+    ▼
+Verifikasi Admin
+    │
+ ┌──┴──┐
+ ▼     ▼
+Aktif  Ditolak
+    │
+    ▼
+Selesai
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+# 🧰 Teknologi yang Digunakan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Teknologi       | Kegunaan                  |
+| --------------- | ------------------------- |
+| Laravel 12      | Backend Framework         |
+| PHP             | Server Side Programming   |
+| MySQL           | Database Management       |
+| Tailwind CSS v4 | UI Styling                |
+| JavaScript      | Interaktivitas Frontend   |
+| Chart.js        | Visualisasi Data          |
+| OpenWeather API | Integrasi Informasi Cuaca |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# 🗄️ Struktur Database
 
-## Security Vulnerabilities
+## users
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Menyimpan data akun pengguna dan administrator.
 
-## License
+## lapangan
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Menyimpan informasi lapangan olahraga yang tersedia.
+
+## orders
+
+Menyimpan data transaksi utama pelanggan.
+
+## order_items
+
+Menyimpan detail item pemesanan lapangan.
+
+### Relasi Database
+
+```text
+users
+ └── orders
+
+lapangan
+ └── order_items
+
+orders
+ └── order_items
+```
+
+---
+
+# 📄 Daftar Halaman
+
+| URL                       | Deskripsi          |
+| ------------------------- | ------------------ |
+| /                         | Halaman utama      |
+| /login                    | Login pengguna     |
+| /register                 | Registrasi akun    |
+| /dashboard                | Dashboard pengguna |
+| /lapangan                 | Katalog lapangan   |
+| /booking                  | Form reservasi     |
+| /riwayat                  | Histori transaksi  |
+| /admin/booking-admin      | Verifikasi booking |
+| /admin/lapangan/create    | Tambah lapangan    |
+| /admin/lapangan/{id}/edit | Edit lapangan      |
+
+---
+
+# 🔑 Akun Demo
+
+## Administrator
+
+**Email**
+
+```text
+bilsport@gmail.com
+```
+
+**Password**
+
+```text
+admin123
+```
+
+---
+
+## Pelanggan
+
+**Email**
+
+```text
+vibiy@gmail.com
+```
+
+**Password**
+
+```text
+vibicantik
+```
+
+---
+
+# 🚀 Instalasi
+
+### Clone Repository
+
+```bash
+git clone https://github.com/BilqisRokhimmatul/bilsport.git
+```
+
+### Install Dependency
+
+```bash
+composer install
+npm install
+```
+
+### Copy Environment
+
+```bash
+cp .env.example .env
+```
+
+### Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### Migrasi Database
+
+```bash
+php artisan migrate
+```
+
+### Jalankan Server
+
+```bash
+php artisan serve
+```
+
+---
+
+# 👨‍💻 Kontributor
+
+**Bilqis Rokhimmatul Khajjah Mabruroh**
+
+Mahasiswa Sistem Informasi
+Universitas Jember
+242410101051
+
+---
+
